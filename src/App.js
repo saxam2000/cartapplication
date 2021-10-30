@@ -4,6 +4,7 @@ import NavBar from "./Components/NavBar";
 import Store from "./Store/Store"
 import {Provider} from "react-redux";
 import Home from "./Components/Home"
+import Cart from "./Components/Cart"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -20,8 +21,8 @@ function App() {
         <Switch>
 
         <Route exact path='/home' component={Home}/>
+        <Route exact path='/cart' component={Cart}/> 
         {/* <Route path='/Products'  component={}> </Route> */}
-        {/* <Route path='/Cart' component={}> </Route> */}
         {/* <Route redirect to ="/"> </Route> */}
         </Switch>
 
